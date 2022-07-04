@@ -7,5 +7,11 @@ sudo apt install -y git \
                     docker.io \
                     docker-compose \
                     nginx \
+                    zsh \
                     tmux || \
-snap install btop
+                    
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Install btop for monitoring system resources
+snap install btop \
