@@ -10,8 +10,8 @@ sudo apt install -y git \
                     zsh \
                     tmux || \
                     
-# Install Oh My Zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && \
-
 # Install btop for monitoring system resources
-snap install btop
+snap install btop || \
+
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
