@@ -6,5 +6,6 @@ sudo apt install -y git \
                     zip \
                     docker.io \
                     docker-compose \
+                    nginx \
                     tmux || \
 snap install btop
