@@ -4,6 +4,7 @@ sudo apt update && \
 sudo apt upgrade && \
 sudo apt install -y git \
                     zip \
+                    nginx \
                     zsh \
                     tmux || \
 
@@ -21,3 +22,9 @@ snap install docker
 
 # Enable and config ufw
 yes | ufw enable
+
+# Enable OpenSSH for ssh
+ufw enable OpenSSH
+
+# Enable port 80 and 443 via Nginx
+ufw enable Nginx Full
