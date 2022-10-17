@@ -27,4 +27,4 @@ yes | ufw enable
 ufw allow OpenSSH
 
 # Enable port 80 and 443 via Nginx
-ufw allow Nginx Full
+ufw allow "Nginx Full"
