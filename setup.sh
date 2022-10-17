@@ -4,9 +4,6 @@ sudo apt update && \
 sudo apt upgrade && \
 sudo apt install -y git \
                     zip \
-                    docker.io \
-                    docker-compose \
-                    nginx \
                     zsh \
                     tmux || \
 
@@ -15,3 +12,6 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
                     
 # Install btop for monitoring system resources
 snap install btop
+
+# Install docker
+snap install docker
