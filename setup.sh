@@ -24,7 +24,7 @@ snap install docker
 yes | ufw enable
 
 # Enable OpenSSH for ssh
-ufw enable OpenSSH
+ufw allow OpenSSH
 
 # Enable port 80 and 443 via Nginx
-ufw enable Nginx Full
+ufw allow Nginx Full
