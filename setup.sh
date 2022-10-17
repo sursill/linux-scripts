@@ -21,10 +21,10 @@ snap install btop
 snap install docker
 
 # Enable and config ufw
-yes | ufw enable && \
+yes | ufw enable
 
 # Enable OpenSSH for ssh
-ufw allow OpenSSH && \
+ufw allow OpenSSH
 
 # Enable port 80 and 443 via Nginx
 ufw allow "Nginx Full"
